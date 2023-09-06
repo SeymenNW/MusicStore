@@ -12,9 +12,9 @@ namespace MusicStore.Controllers
 {
     public class PlaylistsController : Controller
     {
-        private readonly PlaylistContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public PlaylistsController(PlaylistContext context)
+        public PlaylistsController(ApplicationDbContext context)
         {
             _context = context;
         }
