@@ -8,5 +8,7 @@
         public int ArtistId { get; set; }
         public double Price { get; set; }
         public string AlbumArtUrl { get; set; }
+
+        public ICollection<Song> Songs { get; set; }    
     }
 }
