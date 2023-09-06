@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MusicStore.Models;
 
 namespace MusicStore.Data
 {
@@ -9,5 +10,6 @@ namespace MusicStore.Data
             : base(options)
         {
         }
+        public DbSet<MusicStore.Models.Artist>? Artist { get; set; }
     }
 }
